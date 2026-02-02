@@ -1,0 +1,143 @@
+
+/* LAYOUT GENERAL */
+
+.login-layout{
+    display:flex;
+    min-height:100vh;
+}
+
+/* COLUMNA IMAGEN */
+
+.login-image{
+    flex:1;
+    background:
+      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url("../img/Portada.jpg");
+    background-size: cover;
+    background-position: center right;
+}
+
+
+/* COLUMNA LOGIN */
+
+.login-container{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: var(--gris-oscuro);
+}
+
+/* TARJETA */
+
+.login-card{
+    background-color: var(--gris-oscuro);
+    max-width: 420px;
+    width: 90%;
+    padding: 45px 35px;
+    border-radius: 18px;
+    text-align: center;
+    color: var(--blanco);
+
+    border: 1px solid rgba(255,255,255,0.25);
+    box-shadow:
+        0 0 25px rgba(0,0,0,0.6),
+        inset 0 0 10px rgba(255,255,255,0.05);
+}
+
+/* LOGO */
+
+.login-logo{
+    width:180px;
+    margin-bottom:25px;
+    cursor: pointer;
+}
+
+/* TITULO */
+
+.login-card h2{
+    margin-bottom:30px;
+}
+
+/* INPUTS */
+
+.input-group{
+    background-color: var(--gris-medio);
+    display:flex;
+    align-items:center;
+    padding:14px;
+    border-radius:10px;
+    margin-bottom:18px;
+}
+
+.input-group span{
+    color:var(--blanco);
+    margin-right:10px;
+}
+
+.input-group input{
+    background:none;
+    border:none;
+    outline:none;
+    color:var(--blanco);
+    width:100%;
+    font-size:15px;
+}
+
+/* BOTON */
+
+.btn-login{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    background-color: var(--gris-claro);
+    color:var(--blanco);
+    font-size:16px;
+    cursor:pointer;
+}
+
+.btn-login:hover{
+    background-color: var(--gris-medio);
+}
+
+/* LINKS */
+
+.login-links{
+    margin-top:25px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.login-links a{
+    color:var(--blanco);
+    text-decoration:none;
+    font-size:14px;
+}
+
+.login-links a:hover{
+    text-decoration:underline;
+}
+
+/* ===== RESPONSIVE ===== *//* ===== RESPONSIVE GLOBAL ===== */
+@media screen and (max-width: 1024px){
+
+    .login-image,
+    .register-image{
+        display: none !important;
+    }
+
+    .login-layout,
+    .register-layout{
+        flex-direction: column;
+    }
+
+    .login-container,
+    .register-container{
+        width: 100%;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+}

@@ -1,0 +1,25 @@
+/*ESTILOS PARA LAS TABLAS*/
+table{
+    width:80%;
+    margin:40px auto;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid #555;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background:#2d2e2e;
+    color:white;
+}
+
+a{
+    color:var(--gris-claro);
+}
+
+.material-icons{
+    vertical-align:middle;
+}

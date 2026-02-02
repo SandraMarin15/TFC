@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro - Clínica Veterinaria Huellitas</title>
+
+    <!-- ICONS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+     <link rel="stylesheet" href="css/registro.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/boton.css">
+   
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!-- REGISTRO -->
+    <main class="register-layout">
+
+    <!-- COLUMNA IMAGEN -->
+    <div class="register-image"></div>
+
+    <!-- COLUMNA FORMULARIO -->
+    <div class="register-container">
+
+        <div class="register-card">
+
+            <img src="img/logoTransBco.png" class="register-logo" alt="Logo">
+
+            <h2>Crear cuenta</h2>
+
+            <form action="RegistroServlet" method="post">
+
+                <div class="input-group">
+                    <span class="material-icons">person</span>
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                </div>
+
+                <div class="input-group">
+                    <span class="material-icons">person_outline</span>
+                    <input type="text" name="apellidos" placeholder="Apellidos" required>
+                </div>
+
+                <div class="input-group">
+                    <span class="material-icons">phone</span>
+                    <input type="text" name="telefono" placeholder="Teléfono" required>
+                </div>
+
+                <div class="input-group">
+                    <span class="material-icons">email</span>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                </div>
+
+                <div class="input-group">
+                    <span class="material-icons">lock</span>
+                    <input type="password" name="password" placeholder="Contraseña">
+                </div>
+
+                <div class="input-group">
+                    <span class="material-icons">lock</span>
+                    <input type="password" placeholder="Repetir contraseña">
+                </div>
+
+                <button class="btn-login">Registrarse</button>
+
+            </form>
+
+            <div class="login-links">
+                <a href="login.html">Ya tengo cuenta</a>
+                <a href="index.jsp">Volver al inicio</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+</div>
+
+<script src="../js/loadComponents.js"></script>
+
+</body>
+</html>

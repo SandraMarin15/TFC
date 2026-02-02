@@ -1,0 +1,31 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body{
+    height:100%;
+}
+
+body{
+    background-color: var(--gris-oscuro);
+}
+
+
+/* VARIABLES */
+:root {
+    --gris-oscuro: #2d2e2e;
+    --gris-medio: #494a4a;
+    --gris-claro: #7c7f7f;
+    --blanco: #ffffff;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.app-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
